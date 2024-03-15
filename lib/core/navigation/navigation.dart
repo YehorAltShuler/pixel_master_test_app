@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:pixel_master_test_app/core/services/shared_preferences_service.dart';
 import 'package:pixel_master_test_app/features/health_records/presentation/pages/add_new_record.dart';
+import 'package:pixel_master_test_app/features/health_records/presentation/pages/history.dart';
 import 'package:pixel_master_test_app/features/health_records/presentation/pages/pulse_and_pressure.dart';
 import 'package:pixel_master_test_app/init_dependencies.dart';
 
@@ -45,6 +46,16 @@ class Navigation {
             path: AddNewRecord.routePath,
             builder: (context, state) {
               return const AddNewRecord();
+            },
+            routes: const [
+              // TODO router config for nested routes
+            ],
+          ),
+          GoRoute(
+            name: History.routeName,
+            path: History.routePath,
+            builder: (context, state) {
+              return const History();
             },
             routes: const [
               // TODO router config for nested routes
