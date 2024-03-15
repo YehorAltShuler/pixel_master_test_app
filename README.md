@@ -15,6 +15,7 @@ Libraries used:
 - Supabase
 - Hive
 - Shared Preferences
+- GoRouter
 
 ## Demo
 
